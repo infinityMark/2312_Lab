@@ -5,7 +5,14 @@ public class MainQ05containDigit
 	// determine whether a given digit exists in an integer x.  	
 	static boolean containDigit(int x, int d)
 	{	
-		//todo		
+		if (x < 10) {
+			return (x == d);
+		} 
+		int leading = x/10;
+		int right_most = x%10;
+		if (right_most == d) 
+			return true;
+		return containDigit(leading, d);
 	}
 
 	public static void main(String[] args)

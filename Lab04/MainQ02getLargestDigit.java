@@ -7,18 +7,14 @@ public class MainQ02getLargestDigit
 	{
 		if (n<10)
 		{
-			
+			return n;
 		}
 		else
 		{	
-			
-			
-			
-			
-			
-			
-			
-			
+			int right_most = n%10;
+			int leading = n/10;
+			int right_most_new = getLargestDigit(leading);
+			return (right_most>right_most_new) ? right_most : right_most_new;
 		}
 	}
 

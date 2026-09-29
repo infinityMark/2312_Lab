@@ -5,7 +5,17 @@ public class MainQ03containEven
 	// Determine whether an integer x contains even digit(s) (0,2,4,6,8)	
 	static boolean containEven(int x)
 	{	
-		//todo		
+		if (x < 10) {
+			return (x%2 == 0);
+		} 
+		// else
+		int leading = x/10;
+		int right_most = x%10;
+		if (right_most%2==0) {
+			return true;
+		} else {
+			return containEven(leading);
+		}
 	}
 
 

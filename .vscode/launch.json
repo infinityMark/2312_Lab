@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MainQ07leftMostDigit",
+      "request": "launch",
+      "mainClass": "MainQ07leftMostDigit",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
+      "name": "MainQ06countDigits",
+      "request": "launch",
+      "mainClass": "MainQ06countDigits",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
+      "name": "MainQ05containDigit",
+      "request": "launch",
+      "mainClass": "MainQ05containDigit",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
+      "name": "MainQ04showDigitsReverse",
+      "request": "launch",
+      "mainClass": "MainQ04showDigitsReverse",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
+      "name": "MainQ03containEven",
+      "request": "launch",
+      "mainClass": "MainQ03containEven",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
+      "name": "MainQ02getLargestDigit",
+      "request": "launch",
+      "mainClass": "MainQ02getLargestDigit",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
+      "name": "MainQ01showDigits",
+      "request": "launch",
+      "mainClass": "MainQ01showDigits",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "Main",

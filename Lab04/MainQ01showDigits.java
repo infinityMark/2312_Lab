@@ -20,7 +20,7 @@ public class MainQ01showDigits
 		System.out.print("Input n: ");
 		Scanner s = new Scanner(System.in);
 		int n=s.nextInt();
-		showDigits(n);
+		showDigits(n); //In line 23, there is a recursive method call
 		s.close();
 	}
 }

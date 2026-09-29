@@ -5,7 +5,11 @@ public class MainQ06countDigits
 	// Return the number of digits in integer x. 	
 	static int countDigits(int x)
 	{	
-		//todo		
+		if (x < 10) {
+			return 1;
+		} 
+		int leading = x/10;
+		return 1 + countDigits(leading);
 	}
 
 	public static void main(String[] args)

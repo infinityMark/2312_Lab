@@ -5,7 +5,11 @@ public class MainQ07leftMostDigit
 	// Return the left-most digit in integer x 	
 	static int leftMostDigit(int x)
 	{	
-		//todo		
+		if (x < 10) {
+			return x;
+		} 
+		int leading = x/10;
+		return leftMostDigit(leading);	
 	}
 
 
