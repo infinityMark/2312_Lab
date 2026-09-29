@@ -7,7 +7,12 @@ public class MainQ09tail
 	//  e.g., 123=>23, 1234=>234. Assume x>10.
 	static int tail(int x)
 	{	
-		//todo
+		if (x < 10) {
+			return 0;
+		}
+		int leading = x/10;
+		int right_most = x%10;
+		return right_most + 10*tail(leading);
 	}
 
 

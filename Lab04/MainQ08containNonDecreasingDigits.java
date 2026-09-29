@@ -7,7 +7,17 @@ public class MainQ08containNonDecreasingDigits
 	//i.e., whether the sequence of digits is "sorted" in ascending order.
 	static boolean containNonDecreasingDigits(int x)
 	{	
-		//todo
+		if (x < 10) {
+			return true;
+		}
+		int leading = x/10;
+		int right_most = x%10;
+		int right_most_left = leading%10;
+		if (right_most < right_most_left) {
+			return false;
+		} else {
+			return containNonDecreasingDigits(leading);
+		}
 	}
 
 	public static void main(String[] args)

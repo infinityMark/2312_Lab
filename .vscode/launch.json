@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MainQ11reverse",
+      "request": "launch",
+      "mainClass": "MainQ11reverse",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
+      "name": "MainQ10areOpposite",
+      "request": "launch",
+      "mainClass": "MainQ10areOpposite",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
+      "name": "MainQ00showDigits",
+      "request": "launch",
+      "mainClass": "MainQ00showDigits",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
+      "name": "MainQ09tail",
+      "request": "launch",
+      "mainClass": "MainQ09tail",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
+      "name": "MainQ08containNonDecreasingDigits",
+      "request": "launch",
+      "mainClass": "MainQ08containNonDecreasingDigits",
+      "projectName": "2312_Lab_b371c288"
+    },
+    {
+      "type": "java",
       "name": "MainQ07leftMostDigit",
       "request": "launch",
       "mainClass": "MainQ07leftMostDigit",

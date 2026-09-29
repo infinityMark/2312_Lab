@@ -6,7 +6,7 @@ public class MainQ04showDigitsReverse
 	static void showDigitsReverse(int x)
 	{	
 		if (x < 10) {
-			System.out.print(x);
+			System.out.print(x + " ");
 		} else {
 			int leading = x/10;
 			int right_most = x%10;
