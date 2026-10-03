@@ -31,8 +31,8 @@ public class Day {
 			return false;
 		else if (y%4==0)
 			return true;
-		else
-			return false;
+        
+		return false;
 	}
 	
 	// check if y,m,d valid
