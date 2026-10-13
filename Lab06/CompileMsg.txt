@@ -1,0 +1,8 @@
+Team.java:25: error: cannot find symbol
+                leadMember = allMembers.getLast();
+                                       ^
+  symbol:   method getLast()
+  location: variable allMembers of type ArrayList<Member>
+1 error
+
+

@@ -4,6 +4,7 @@ import java.io.*;
 public class Team{
 
     private Member[] allMembers = null;
+    private Member leadMember;
 	
 	public Team(String filepathname) throws FileNotFoundException
 	{
@@ -16,9 +17,14 @@ public class Team{
 		for (int i = 0; i < tot; i++)
 		{
 			String name = inFile.next();
-			allMembers[i] = new Member(name);
-		}
-				
+			char role = inFile.next().charAt(0);
+
+            Role r = (role == 'l') ? new RLeader() : new RNormalMember();
+			allMembers[i] = new Member(name, r);
+
+            if (role == 'l')
+                leadMember = allMembers[i];
+		}				
 		inFile.close();
 	}
 	
@@ -30,7 +36,7 @@ public class Team{
 	{
 		String result="";
 		for (Member member: allMembers)
-				result += member.getName() + " ";
+				result += member.getNameAndRole() + " ";
 		result=result.trim();
 		return result;
 	}
@@ -38,13 +44,20 @@ public class Team{
 	
 	public void printTeamContactMessages()
 	{
-		String allNames=getStringOfAllMembers();
 		for (Member member: allMembers)
 		{
 			String name_i=member.getName();
-			System.out.print("Dear " + name_i);
-			String teammates = allNames.replace(name_i, "");
-			System.out.println(",  please contact your teammates: " + teammates);
+			System.out.print("Dear " + name_i +", ");
+
+            System.out.println(member.genTeamContactMsg(this));
 		}
-	}	
+	}
+
+    public Member getLeader() { return leadMember; };
+
+    public String getStringOfNormalMembers() {
+        String result = getStringOfAllMembers();
+        result = result.replace(leadMember.getNameAndRole(), "");
+        return result;
+    };
 }
