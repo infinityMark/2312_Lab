@@ -1,6 +1,6 @@
 class X
 {
-	private static int a;
+	private static int a; // 3
 	private int b;
 
 	public X(int n)
