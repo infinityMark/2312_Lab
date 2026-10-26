@@ -1,0 +1,28 @@
+Main.java:16: error: cannot find symbol
+        Company company = Company.getInstance();
+        ^
+  symbol:   class Company
+  location: class Main
+Main.java:16: error: cannot find symbol
+        Company company = Company.getInstance();
+                          ^
+  symbol:   variable Company
+  location: class Main
+Main.java:18: error: cannot find symbol
+            company.addEmployee(new Employee(inFile.next(),inFile.nextInt(),inFile.nextInt()));
+                                    ^
+  symbol:   class Employee
+  location: class Main
+Main.java:33: error: cannot find symbol
+                (new AddSalary()).execute(cmdParts);
+                     ^
+  symbol:   class AddSalary
+  location: class Main
+Main.java:35: error: cannot find symbol
+                (new ListAllRecords()).execute(cmdParts);
+                     ^
+  symbol:   class ListAllRecords
+  location: class Main
+5 errors
+
+
