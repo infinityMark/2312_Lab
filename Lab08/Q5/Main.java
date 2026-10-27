@@ -34,8 +34,8 @@ public class Main {
                 (new changeAnnualLeaves()).execute(cmdParts);
             if (cmdParts[0].equals("exchangeSalaries"))
                 (new exchangeSalaries()).execute(cmdParts);
-            if (cmdParts[0].equals("fireLazyguy"))
-                (new fireLazyguy()).execute(cmdParts);
+            if (cmdParts[0].equals("fire"))
+                (new firedEmployee()).execute(cmdParts);
 
             if (cmdParts[0].equals("list"))
                 (new ListAllRecords()).execute(cmdParts);
