@@ -1,0 +1,47 @@
+Please input the file pathname: data1.txt
+
+> startNewDay|01-Jan-2025
+
+> hire|Bob
+Done.
+
+> hire|John
+Done.
+
+> hire|Grace
+Done.
+
+> listEmployees
+Bob
+Grace
+John
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+Nothing to undo.
+
+> listEmployees
+
+> redo
+
+> redo
+
+> listEmployees
+Bob
+John
+
+> hire|Helena
+Done.
+
+> listEmployees
+Bob
+Helena
+John
+
+> redo
+Nothing to redo.

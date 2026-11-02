@@ -1,0 +1,2 @@
+curl -L -o Lab https://www.cs.cityu.edu.hk/~helena/cs2312202627A/Labs/Lab09_GivenFiles/Lab_GivenFiles.zip
+curl -L -O https://www.cs.cityu.edu.hk/~helena/cs2312202627A/Labs/Lab.pdf

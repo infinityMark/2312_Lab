@@ -1,0 +1,77 @@
+Please input the file pathname: data2.txt
+
+> startNewDay|01-Jan-2025
+
+> hire|Bob
+Done.
+
+> hire|John
+Done.
+
+> hire|Grace
+Done.
+
+> setupTeam|X Troop|Bob
+Done.
+
+> setupTeam|Spider Gang|John
+Done.
+
+> startNewDay|01-Feb-2025
+Done.
+
+> setupTeam|Team 007|Grace
+Done.
+
+> listTeams
+Team Name      Leader    Setup Date   
+Spider Gang    John      1-Jan-2025   
+Team 007       Grace     1-Feb-2025   
+X Troop        Bob       1-Jan-2025   
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+Nothing to undo.
+
+> listTeams
+Team Name      Leader    Setup Date   
+
+> redo
+
+> redo
+
+> redo
+
+> redo
+
+> redo
+
+> listTeams
+Team Name      Leader    Setup Date   
+Spider Gang    John      1-Jan-2025   
+X Troop        Bob       1-Jan-2025   
+
+> setupTeam|Team 007|Grace
+Done.
+
+> listTeams
+Team Name      Leader    Setup Date   
+Spider Gang    John      1-Jan-2025   
+Team 007       Grace     1-Jan-2025   
+X Troop        Bob       1-Jan-2025   
+
+> redo
+Nothing to redo.
