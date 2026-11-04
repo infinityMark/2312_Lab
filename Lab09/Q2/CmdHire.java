@@ -10,4 +10,10 @@ public class CmdHire extends RecordedCommand{
         clearRedoList();
         addRedoCommand(this);
     }
+
+    @Override
+    public void undoMe(){
+        
+    }
+    // public abstract void redoMe();
 }

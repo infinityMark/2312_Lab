@@ -22,6 +22,14 @@ public class Company{
         return e; 
     }
 
+    public Employee fireEmployee(Employee employee) {
+        for (Employee e : allEmployees) {
+            if (Employee.searchEmployee(allEmployees, employee.getName()) != null) 
+                return e;
+        }
+        return null; 
+    }
+
     public Team createTeam(String teamName, String leadeString) {
         Team e = new Team(teamName, 
             Employee.searchEmployee(allEmployees, leadeString), 
