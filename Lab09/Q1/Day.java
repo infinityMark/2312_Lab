@@ -1,8 +1,10 @@
-public class Day {
+public class Day implements Cloneable{
 	
 	private int year;
 	private int month;
 	private int day;
+
+    private static final String MonthNames="JanFebMarAprMayJunJulAugSepOctNovDec";
 	
 	//Constructor
 	public Day(int y, int m, int d) {
@@ -10,6 +12,8 @@ public class Day {
 		this.month=m;
 		this.day=d;		
 	}
+
+    public Day(String str) { set(str);}
 	
 	// check if a given year is a leap year
 	static public boolean isLeapYear(int y)
@@ -45,12 +49,25 @@ public class Day {
 
 	// Return a string for the day like dd MMM yyyy
 	public String toString() {
-		
-		final String[] MonthNames = {
-				"Jan", "Feb", "Mar", "Apr",
-				"May", "Jun", "Jul", "Aug",
-				"Sep", "Oct", "Nov", "Dec"};
-		
-		return day+" "+ MonthNames[month-1] + " "+ year;
+		return day+"-"+ MonthNames.substring((month-1)*3, month*3) + "-"+ year;
 	}
+
+    public void set(String sDay) { //Set year,month,day based on a string like 01-Mar-2025
+        String[] sDayParts = sDay.split("-");
+        this.day = Integer.parseInt( sDayParts[0] );
+        this.year = Integer.parseInt( sDayParts[2] );
+        this.month = MonthNames.indexOf(sDayParts[1])/3+1;
+    }
+
+    @Override
+    public Day clone(){
+        Day object = null;
+        try {
+            // because the clone in super class is protect
+            object = (Day) super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return object;
+    }
 }
