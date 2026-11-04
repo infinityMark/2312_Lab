@@ -24,4 +24,13 @@ public class Employee implements Comparable<Employee>{
         }
         return null;
     }
+
+    public static void list(ArrayList<Employee> list){
+        for (Employee employee: list){
+            System.out.printf(
+                "%s (Entitled Annual Leaves: %d days)\n",
+                employee.getName(), employee.getAnnualLeaves()
+            );
+        }
+    }
 }

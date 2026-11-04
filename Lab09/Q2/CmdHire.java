@@ -8,12 +8,22 @@ public class CmdHire extends RecordedCommand{
         company.createEmployee(hiredemployee.getName(), hiredemployee.getAnnualLeaves());
 
         clearRedoList();
-        addRedoCommand(this);
+        addUndoCommand(this);
+        // System.out.println(this.hiredemployee);
+        System.out.println("Done.");
     }
 
     @Override
     public void undoMe(){
-        
+        Company company = Company.getInstance();
+        company.fireEmployee(this.hiredemployee.getName());
+        addRedoCommand(this);
     }
-    // public abstract void redoMe();
+    
+    @Override
+    public void redoMe(){
+        Company company = Company.getInstance();
+        company.createEmployee(hiredemployee.getName(), hiredemployee.getAnnualLeaves());
+        addUndoCommand(this);
+    }
 }

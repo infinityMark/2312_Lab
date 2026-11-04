@@ -1,8 +1,8 @@
 startNewDay|01-Jan-2025
 
-hire|Bob
-hire|John
-hire|Grace
+hire|Bob|30
+hire|John|30
+hire|Grace|30
 
 setupTeam|X Troop|Bob 
 setupTeam|Spider Gang|John

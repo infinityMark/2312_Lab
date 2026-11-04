@@ -15,6 +15,8 @@ public class Company{
 
     public void listTeams() { Team.list(allTeams); }
 
+    public void listEmployees() { Employee.list(allEmployees); }
+
     public Employee createEmployee(String name, int date) {
         Employee e = new Employee(name, date);
         allEmployees.add(e);
@@ -22,12 +24,14 @@ public class Company{
         return e; 
     }
 
-    public Employee fireEmployee(Employee employee) {
-        for (Employee e : allEmployees) {
-            if (Employee.searchEmployee(allEmployees, employee.getName()) != null) 
-                return e;
+    public boolean fireEmployee(String name) {
+        for (int i = 0; i < allEmployees.size(); i++) {
+            if (allEmployees.get(i).getName().equals(name)) {
+                allEmployees.remove(i);
+                return true;
+            }
         }
-        return null; 
+        return false; 
     }
 
     public Team createTeam(String teamName, String leadeString) {
