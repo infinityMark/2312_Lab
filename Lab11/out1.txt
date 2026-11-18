@@ -1,0 +1,7 @@
+DEFAULT TESTING:
+false
+false
+true
+
+MORE TESTING:
+Type the semesters which Michael took CS2312: 

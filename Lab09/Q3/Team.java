@@ -34,12 +34,12 @@ public class Team implements Comparable<Team>{
     }
 
     public static void list(ArrayList<Team> list) {
+        System.out.printf("%-30s%-10s%-13s\n", "Team Name", "Leader", "Setup Date");
         if (list.isEmpty()) {
-            System.out.printf("No any team\n");
+            // System.out.printf("No any team\n");
             return;
         }
 
-        System.out.printf("%-30s%-10s%-13s\n", "Team Name", "Leader", "Setup Date");
         for (Team team: list){
             System.out.printf("%s\n", team);
         }
