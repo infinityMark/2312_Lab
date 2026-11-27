@@ -1,0 +1,30 @@
+Person.java:4: error: illegal start of expression
+        return switch (toyName) {
+               ^
+Person.java:5: error: : expected
+            case "Piano"    -> new Piano();
+                        ^
+Person.java:5: error: illegal start of expression
+            case "Piano"    -> new Piano();
+                            ^
+Person.java:6: error: : expected
+            case "Football" -> new Football();
+                           ^
+Person.java:6: error: illegal start of expression
+            case "Football" -> new Football();
+                            ^
+Person.java:7: error: : expected
+            case "Chess"    -> new Chess();
+                        ^
+Person.java:7: error: illegal start of expression
+            case "Chess"    -> new Chess();
+                            ^
+Person.java:8: error: : expected
+            default -> null;
+                   ^
+Person.java:8: error: illegal start of expression
+            default -> null;
+                    ^
+9 errors
+
+

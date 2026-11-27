@@ -1,0 +1,32 @@
+User-agent: sogouspider
+Disallow: /
+
+User-agent: Sogou web spider
+Disallow: /
+
+Sitemap: https://www.cityu.edu.hk/ph/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/pg/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/cc/sitemap.xml
+Sitemap: https://www.cs.cityu.edu.hk/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/ma/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/jcc/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/mne/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/slw/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/ace/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/see/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/mse/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/rsu/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/sgs/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/phy/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/ohrp/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/casm/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/ceng/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/chem/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/csci/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/sklmeh/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/carelab/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/ss_research/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/template-wcm/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/named-professorship/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/cyber-joy-enjoy-lab/sitemap.xml
+Sitemap: https://www.cityu.edu.hk/see-15th-anniversary/sitemap.xml
